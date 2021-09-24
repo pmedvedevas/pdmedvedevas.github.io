@@ -1,0 +1,146 @@
+/* general styles */
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    margin: 20px 0;
+}
+
+h1,
+p {
+    color: #383838;
+}
+
+
+/* .app-box styles */
+
+.app-box {
+    width:300px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #79B4B7;
+    height: 100%;
+    padding:20px;
+    box-shadow: 0 0 10px 5px rgb(207, 207, 207);
+    margin-top: 5%;
+}
+
+
+/* sumbit box */
+
+#task {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+#submit {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd884;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #383838;
+    transition: opacity ease-in 500ms;
+}
+
+#submit:hover {
+    box-shadow: 0 0 5px 3px #9D9D9D;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #94acad;
+    font-weight: 400;
+}
+
+hr {
+    height: 3px;
+    border: none;
+    border-radius: 3px;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+
+/* task list */
+
+#task-list {
+    list-style-type: none;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #FEFBF3;
+} 
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    min-height: 40px;
+}
+
+#cross {
+    height: 20px;
+    opacity: 0.5;
+    transition: opacity ease-in 300ms;
+}
+
+#cross:hover {
+    opacity: 1;
+}
+
+.todo p {
+    text-transform: uppercase;
+    inline-size: 130px;
+    overflow-wrap: break-word;
+    text-align: left;
+    font-size: 14px;
+}
+
+#task-list button {
+    background-color: #9D9D9D;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 110px;
+    color: #383838;
+    transition: background-color ease 700ms;
+}
+
+#task-list button:hover {
+    background-color: #ffd884;
+    opacity: 0.8;
+}
+
+#task-list .is-checked{
+    background-color: #ffd884;
+    transition: opacity ease 700ms;
+}
+
+#task-list .is-checked:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
