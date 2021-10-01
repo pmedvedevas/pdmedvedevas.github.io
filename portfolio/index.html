@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Povilas Medvedevas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="navbar">
+        <nav class="navigation">
+            <a href="index.html"><h1>Povilas Medvedevas</h1></a>
+            <div class="dropdown">
+                <button onclick="dropDown()" class="dropbtn"><h2>Projects &#x25BC;</h2></button>
+                <div id="dropContent" class="dropdown-content">
+                    <a href="projects/todo/todo.html">TODO app</a>
+                    <a href="projects/calculator/calculator.html">Calculator app</a>
+                    <a href="projects/ball/ball.html">Levitating ball</a>
+                    <a href="index.html" id="last">HOME</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <article class="content">
+                <span class="hey">Hey!</span>
+                <p>I'm Povilas, a self-taught front-end developer currently looking for internship opportunities or junior position with a possibility to learn and grow.</p>
+                <p>I love programming with JS, you can check out some of my projects down below.
+                <p>I'm still just learning, but my learning curve is as steep as it gets. I started my programming journey in a summer of 2021 and I have already cracked the quirks of the main front-end tools.</p>
+                <p>Next stop in my journey - React.js!</p>
+            </article>
+            <aside class="picture">
+                <img src="images/my_pic.jpg" alt="Povilas gives thumbs up"/>
+            </aside>
+        </section>
+
+
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <h3>TODO app</h3>
+                <div class="project-box todo-app">
+                    <div class="description">
+                        <p>It is a simple "to do" app that allows user to:</p>
+                        <ul class="functionalities">
+                            <li>Type in new tasks</li>
+                            <li>Erase tasks</li>
+                            <li>Mark tasks as completed/incomplete</li>
+                        </ul>
+                    </div>
+                    <img src ="images/todo.png" alt=""/>
+                </div>
+
+                <h3>Calculator app</h3>
+                <div class="project-box calc-app">
+                    <div class="description">
+                        <p>Calculator app can:</p><ul class="functionalities">
+                            <li>Do basic arithmetics</li>
+                            <li>Erase input when backspace is clicked</li>
+                            <li>Invert numbers (+/-)</li>
+                        </ul>
+                    </div>
+                    <img src ="images/calc.png" alt=""/>
+                </div>
+
+                <h3>Ball levitation app</h3>
+                <div class="project-box ball-app">
+                    <div class="description">
+                        <p>This super simple app allows user to:</p><ul class="functionalities">
+                            <li>Move ball around with arrow keys</li>
+                            <li>Enjoy nice colors :D</li>
+                        </ul>
+                    </div>
+                    <img src ="images/ball.png" alt=""/>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><i class="fab fa-html5 fa-3x"></i></li>
+                <li><i class="fab fa-css3 fa-3x"></i></li>
+                <li><i class="fab fa-js-square fa-3x"></i></li>
+                <li><i class="fab fa-github fa-3x"></i></li>
+                <li><img src="images/Ai.png" alt=""/></li>
+                <li><img src="images/PS.png" alt=""/></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <h2>Contact</h2>
+        <ul class="contact-me">
+            <li><a href="https://www.linkedin.com/in/povilas-medvedevas/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+            <li><a href="https://github.com/pmedvedevas/pdmedvedevas.github.io" target="_blank"><i class="fab fa-github fa-3x"></i></a></li>
+            <li><a href="mailto:pdmedvedevas@gmail.com" target="_blank"><i class="far fa-envelope fa-3x"></i></a></li>
+            <li><a href="tel:+37062495508" target="_blank"><i class="fas fa-phone-square-alt fa-3x"></i></a></li>
+        </ul>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

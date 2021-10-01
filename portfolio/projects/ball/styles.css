@@ -1,0 +1,57 @@
+.ball_container h2 {
+    color: #fff9e9;
+    font-family: 'Courier New', Courier, monospace;
+    background: none;
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+}
+
+
+
+.ball_container {
+    background-color: #5b0edb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+.ball{
+    background-color: #ea5b49;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: all ease 2s;
+    display: relative;
+    bottom: 0px;
+}
+
+.move-up {
+    transform: translateY(-28vh);
+}
+.move-right {
+    transform: translateX(15vw);
+}
+.move-left {
+    transform: translateX(-15vw);
+}
+.move-down {
+    transform: translateY(28vh);
+}
+
+@media only screen and (max-width: 768px) {
+    .move-right {
+        transform: translateX(calc(50vw - 60px));
+    }
+    .move-left {
+        transform: translateX(calc(-50vw + 60px));
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        position: relative;
+        bottom: 5%;
+    }
+}

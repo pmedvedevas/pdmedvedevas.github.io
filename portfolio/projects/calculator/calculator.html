@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Povilas Medvedevas</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="navbar">
+        <nav class="navigation">
+            <a href="../../index.html"><h1>Povilas Medvedevas</h1></a>
+            <div class="dropdown">
+                <button onclick="dropDown()" class="dropbtn"><h2>Projects &#x25BC;</h2></button>
+                <div id="dropContent" class="dropdown-content">
+                    <a href="../todo/todo.html">TODO app</a>
+                    <a href="calculator.html">Calculator app</a>
+                    <a href="../ball/ball.html" >Levitating ball</a>
+                    <a href="../../index.html" id="last">HOME</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="app">
+                <h2>Calculator App</h2>
+            <main>
+            
+                <div class="container">
+                    <div class="box display" id="display-output">
+        
+                    </div>
+                    <div class="box top" onclick="cleanDisplay()">
+                        <p>C</p>
+                    </div>
+                    <div class="box top">
+                        <p><i class="fas fa-backspace" onclick="backspace()"></i></p>
+                    </div>
+                    <div class="box top" onclick="inverse()">
+                        <p>+/-</p>
+                    </div>
+                    <div class="box side" id="divide">
+                        <p>&divide;</p>
+                    </div>
+                    <div class="box digit" id="7" onclick="setDigit(this.id)">
+                        <p>7</p>
+                    </div>
+                    <div class="box digit" id="8" onclick="setDigit(this.id)">
+                        <p>8</p>
+                    </div>
+                    <div class="box digit" id="9" onclick="setDigit(this.id)">
+                        <p>9</p>
+                    </div>
+                    <div class="box side" id="multiply">
+                        <p>&times;</p>
+                    </div>
+                    <div class="box digit" id="4" onclick="setDigit(this.id)">
+                        <p>4</p>
+                    </div>
+                    <div class="box digit" id="5" onclick="setDigit(this.id)">
+                        <p>5</p>
+                    </div>
+                    <div class="box digit" id="6" onclick="setDigit(this.id)">
+                        <p>6</p>
+                    </div>
+                    <div class="box side" id="subtract">
+                        <p>-</p>
+                    </div>
+                    <div class="box digit" id="1" onclick="setDigit(this.id)">
+                        <p>1</p>
+                    </div>
+                    <div class="box digit" id="2" onclick="setDigit(this.id)">
+                        <p>2</p>
+                    </div>
+                    <div class="box digit" id="3" onclick="setDigit(this.id)">
+                        <p>3</p>
+                    </div>
+                    <div class="box side" id="sum">
+                        <p>+</p>
+                    </div>
+                    <div class="box digit zero" id="0" onclick="setDigit(this.id)">
+                        <p>0</p>
+                    </div>
+                    <div class="box digit" id="." onclick="setDigit(this.id)">
+                        <p>,</p>
+                    </div>
+                    <div class="box side" id="equal">
+                        <p>=</p>
+                    </div>
+        
+                </div>
+        </section>
+
+
+
+    </main>
+
+<footer class="footer">
+    <h2>Contact</h2>
+    <ul class="contact-me">
+        <li><a href="https://www.linkedin.com/in/povilas-medvedevas/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+        <li><a href="https://github.com/pmedvedevas/pdmedvedevas.github.io" target="_blank"><i class="fab fa-github fa-3x"></i></a></li>
+        <li><a href="mailto:pdmedvedevas@gmail.com" target="_blank"><i class="far fa-envelope fa-3x"></i></a></li>
+        <li><a href="tel:+37062495508" target="_blank"><i class="fas fa-phone-square-alt fa-3x"></i></a></li>
+    </ul>
+</footer>
+<script src="../../main.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
