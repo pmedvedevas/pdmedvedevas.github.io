@@ -1,0 +1,182 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#game {
+    width: 375px;
+    height: 800px;
+    background-color: rgb(31,31,31);
+}
+
+#start{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(158, 158, 158, 0.5);
+    color: #fff;
+    border: 2px solid #303030;
+    border-radius: 10px;
+    position: relative;
+    z-index: 9;
+    margin: 0 auto;
+    top: 300px;
+    text-align: center;
+}
+
+h1{
+    margin: 1.5rem;
+}
+
+#player {
+    /* width: 100px; */
+    height: 20px;
+    background-color: rgb(255, 79, 79);
+    border-radius: 10px;
+    display: inline-block;
+    position:absolute;
+    top: 750px;
+    left: calc(375px/2 - 25px);
+    transition: left linear 100ms;
+}
+
+#score {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+#lives {
+    height: 50px;
+    width: 340px;
+   text-align: end; 
+    position: absolute;
+    z-index: 2;
+    padding-top: 1rem;
+}
+
+.block {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(70, 249, 255);
+    border-radius: 0 0 10px 10px ;
+    position: absolute;
+    top: 0px;
+}
+
+.block-animation {
+    animation: block 3s linear;
+}
+
+@keyframes block {
+    0%{top:0px;}
+    100%{top:800px;}
+}
+
+.crazy-block {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    position: absolute;
+    top: 0px;
+}
+
+.crazy-animation-left {
+    animation: crazy-left 3s linear
+}
+
+@keyframes crazy-left {
+    0%{top:0px;}
+    20%{left: 0px;}
+    40%{left: 360px;}
+    50%{background-color: #00ff00;}
+    60%{left: 0px;}
+    70%{top: 770px;}
+    100%{top:800px; background-color: #0000ff;}
+}
+
+.crazy-animation-right {
+    animation: crazy-right 3s linear
+}
+
+@keyframes crazy-right {
+    0%{top:0px;}
+    20%{left: 360px;}
+    40%{left: 0px;}
+    50%{background-color: #ff0000;}
+    60%{left: 360px;}
+    70%{top: 770px;}
+    100%{top:800px; background-color: #fff;}
+}
+
+
+.thunder,.addlife {
+    position: absolute;
+    top: 0px;
+    animation: block 3s linear;
+}
+
+.trunc {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #ff5050;
+    position: absolute;
+    top: 0px;
+    animation: block 3s linear;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#pop-up {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(158, 158, 158, 0.5);
+    color: #fff;
+    border: 2px solid #303030;
+    border-radius: 10px;
+    position: relative;
+    z-index: 9;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    top: 300px;
+}
+
+button{
+    border: none;
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+button:active{
+    background-color: rgb(223, 209, 209);
+    color: #303030;
+    box-shadow: 0 0 3px 1px #303030;
+}
+
+.controler {
+    width: calc(375px/2);
+    height: 800px;
+    position: absolute;
+    z-index: 5;
+}
+#right {
+    left: calc(375px/2);
+}
+
